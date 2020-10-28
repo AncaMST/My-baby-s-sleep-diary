@@ -15,6 +15,14 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="card-body">
+                    <a href="http://127.0.0.1:8000/childregistration"><strong>Register a child!<strong></strong></a href>
+
                 </div>
             </div>
         </div>
