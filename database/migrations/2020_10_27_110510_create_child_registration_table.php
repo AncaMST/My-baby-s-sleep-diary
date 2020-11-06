@@ -18,7 +18,7 @@ class CreateChildRegistrationTable extends Migration
             $table->string('First name');
             $table->integer('Age');
             $table->string('Birth month');
-            $table->foreign('parinte')->references('email')->on('users');
+            $table->foreign('Parent')->references('id')->on('users');
             $table->timestamps();
         });
     }

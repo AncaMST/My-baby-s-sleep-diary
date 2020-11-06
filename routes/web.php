@@ -17,9 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/childregistration', function () {
-    return view('childregistration');
-});
+Route::view('/childregistration', 'childregistration');
 
 Auth::routes();
 
