@@ -17,6 +17,7 @@ class CreateChildRegistrationTable extends Migration
             $table->id();
             $table->string('First_name');
             $table->integer('Age_in_months');
+            $table->foreignId('user_id')->nullable()->index();
             $table->timestamps();
         });
     }

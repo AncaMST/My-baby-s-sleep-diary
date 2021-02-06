@@ -15,7 +15,7 @@ class Children extends Controller
         $child = new Child;
         $child->First_name = $req->First_name;
         $child->Age_in_months = $req->Age_in_months;
-        echo $child->save();
+        $child->save();
     }
 
 
