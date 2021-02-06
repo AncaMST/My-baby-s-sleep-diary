@@ -17,7 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::view('/childregistration', 'childregistration');
+Route::post('submit','App\Http\Controllers\Children@save');
 
 Auth::routes();
 

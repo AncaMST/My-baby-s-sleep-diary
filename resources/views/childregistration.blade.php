@@ -7,26 +7,12 @@
 </head>
 <body>
     <h1>Create a child profile!</h1>
-    <form method="GET" action="http://127.0.0.1:8000/childregistration">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="age">Age:</label><br>
-        <input type="integer" id="age" name="Age:"><br><br>
-        <label for="birthm">Birth month:</label>
-        <select name="months" id="months" form="monthform">
-        <option value="january">January</option>
-        <option value="february">February</option>
-        <option value="march">March</option>
-        <option value="april">April</option>
-        <option value="may">May</option>
-        <option value="june">June</option>
-        <option value="july">July</option>
-        <option value="august">August</option>
-        <option value="september">September</option>
-        <option value="octomber">Octomber</option>
-        <option value="november">November</option>
-        <option value="december">December</option>
-</select>
+    <form method="POST" action="submit">
+        @csrf
+        <label for="First_name">First name:</label><br>
+        <input type="text" id="First_name" name="First_name"><br>
+        <label for="Age_in_months">Age in months:</label><br>
+        <input type="integer" id="Age_in_months" name="Age_in_months"><br><br>
         <input type="submit" value="Submit">
     </form>
 </body>

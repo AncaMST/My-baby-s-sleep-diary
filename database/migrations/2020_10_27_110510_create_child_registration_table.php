@@ -15,10 +15,8 @@ class CreateChildRegistrationTable extends Migration
     {
         Schema::create('childregistration', function (Blueprint $table) {
             $table->id();
-            $table->string('First name');
-            $table->integer('Age');
-            $table->string('Birth month');
-            $table->foreign('Parent')->references('id')->on('users');
+            $table->string('First_name');
+            $table->integer('Age_in_months');
             $table->timestamps();
         });
     }
