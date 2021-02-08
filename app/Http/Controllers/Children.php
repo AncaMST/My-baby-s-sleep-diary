@@ -16,6 +16,7 @@ class Children extends Controller
         $child->First_name = $req->First_name;
         $child->Age_in_months = $req->Age_in_months;
         $child->save();
+        return redirect('/age/'.$child->Age_in_months);
     }
 
 

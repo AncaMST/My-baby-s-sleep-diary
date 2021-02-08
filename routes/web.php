@@ -27,13 +27,13 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/age/{number_of_months}/', function ($number_of_months) {
     if ($number_of_months<2)
-        return "În primele săptămâni de viață somnul este dezorganizat, iar nevoia de somn este foarte mare. Bebelușul are nevoie să doarmă din nou la 60 de minute de la trezirea precedentă. Sunt normale somnurile scurte, de 20-30 de minute.";
+        return "In the first weeks of life, sleep is disorganized, and the need for sleep is very high. The baby needs to sleep again at 60 minutes after waking up. Short sleeps of 20-30 minutes are normal.";
 
     if ($number_of_months>=2 && $number_of_months<5)
-        return "De pe la 12 săptămâni începe să se dezvolte ritmul circadian de somn, ceasul intern care dictează când are nevoie organismul de somn. Treptat, bebelușii încep să doarmă mai multe ore legate noaptea, iar ziua cresc perioadele de activitate de la 60 de minute la 90 de minute. Până la 5 luni se aplică regula de 90 de minute: somn la 90 de minute după trezirea din somnul precedent. Ora de culcare de seară este în jur de 7-8, în funcție de ultimul somn de zi.";
+        return "From the age of 12 weeks, the sleep's circadian rhythm, the internal clock that dictates when the body needs sleep, begins to develop. Gradually, babies begin to sleep for several hours at night, and during the day the activity periods increase from 60 minutes to 90 minutes. Up to 5 months the rule of 90 minutes applies: sleep at 90 minutes after waking up from the previous sleep. The evening bedtime is around 7-8 p.m., depending on the last day's sleep.";
 
     if ($number_of_months>=5 && $number_of_months<7)
-        return "La această vârstă crește perioada de activitate la 2 ore între somnurile de zi, cu primul somn mai devreme, la 90 de minute. Programul de somn optim: primul somn la ora 9, al doilea la 12, al treilea la 3, culcarea de seară în jur de 7. Spre sfârșitul perioadei se face trecerea de la trei somnuri de zi la două.";
+        return "At this age, the period of activity increases until 2 hours between daytime sleeps, with the first sleep earlier, at 90 minutes. Optimal sleep schedule: the first sleep at 9a.m. o'clock, the second at 12p.m. o'clock, the third at 3p.m. o'clock, the evening sleep around 7p.m. Towards the end of the period, the transition from three to two day sleeps is made.";
 
     if ($number_of_months>=7 && $number_of_months<16)
           return "În jur de 7 luni, se face trecere de la 3 trei somnuri de zi la două. Orele biologice pentru două somnuri sunt 9 și la 13, cu o culcare de seară la 3 ore de la trezirea din somnul de prânz. Pe perioada tranziției însă, se poate ca somnul de prânz să înceapă mai devreme sau să fie mai scurt. În acele zilele, oferiți un al treilea somn din care bebelușul să se trezească cel târziu la 4:30, pentru a proteja ora de culcare de seară.Programul cu două somnuri de zi are ca intervale de activitate 2 ore (de la trezirea de dimineață până la primul somn al zilei), 2 ore și jumătate (între somnul de dimineață și cel de prânz) și 3 ore (de la trezirea din somnul de prânz până la culcarea de seară).";
