@@ -83,8 +83,9 @@
         <div class="title m-b-md">
             My baby's sleep diary
         </div>
-
-
+        <div class ="body">
+            <h4>Here you will find the information that you need to know about your baby's sleep, in order to help him to have a better sleep</h4>
+        </div>
     </div>
 </div>
 </body>
