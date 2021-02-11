@@ -21,9 +21,16 @@
             <div class="card">
 
                 <div class="card-body">
+                    <p></p>
                     <a href="http://127.0.0.1:8000/childregistration"><strong>Register a child!<strong></strong></a href>
 
                 </div>
+                <div class="card-body">
+                    <p></p>
+                    <a href="http://127.0.0.1:8000/showchildren"><strong>Show my children!</strong></a href>
+
+                </div>
+
             </div>
         </div>
     </div>

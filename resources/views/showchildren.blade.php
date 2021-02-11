@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Child between 5-6 months</title>
+    <title>Show my children</title>
 </head>
 <body>
     <div class="flex-center position-ref full-height">
@@ -22,7 +22,17 @@
                 @endauth
             </div>
         @endif
-    <h3>Children with age between 5-6 months</h3>
-    <p>At this age, the period of activity increases until 2 hours between daytime sleeps, with the first sleep earlier, at 90 minutes. Optimal sleep schedule: the first sleep at 9a.m. o'clock, the second at 12p.m. o'clock, the third at 3p.m. o'clock, the evening sleep around 7p.m. Towards the end of the period, the transition from three to two day sleeps is made.</p>
+    <h5>See below the registered children:</h5>
+    <ul>
+        @foreach($children as $child)
+            <li>
+               {{ $child->First_name}} {{ $child->Age_in_months}} {{'months'}}
+               <a href ="{{route('sleepinfo', $child->Age_in_months)}}">See sleep info</a>
+            </li>
+        @endforeach
+    </ul>
+
+    <p></p>
+    <a href="http://127.0.0.1:8000/childregistration"><strong>Register another child!<strong></strong></a href>
 </body>
 </html>

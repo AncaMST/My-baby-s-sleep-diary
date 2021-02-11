@@ -25,7 +25,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/age/{number_of_months}/', function ($number_of_months) {
+Route::get('/age/{number_of_months}/', function ($number_of_months)  {
     if ($number_of_months<=2)
         return view('age1');
 
@@ -41,3 +41,7 @@ Route::get('/age/{number_of_months}/', function ($number_of_months) {
      if ($number_of_months>=16)
          return view('age5');
 });
+
+Route::get('/showchildren', 'App\Http\Controllers\Children@index');
+
+Route::get('/sleepinfo/{age}/', 'App\Http\Controllers\Children@sleepinfo')->name('sleepinfo');
