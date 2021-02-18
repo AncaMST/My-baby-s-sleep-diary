@@ -27,8 +27,8 @@
         @csrf
         <label for="First_name">First name:</label><br>
         <input type="text" id="First_name" name="First_name"><br>
-        <label for="Age_in_months">Age in months:</label><br>
-        <input type="integer" id="Age_in_months" name="Age_in_months"><br><br>
+        <label for="Birth_date">Birth date:</label><br>
+        <input type="date" id="Birth_date" name="Birth_date"><br><br>
         <input type="submit" value="Submit">
     </form>
 </body>

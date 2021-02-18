@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Carbon\Carbon;
 
 class CreateChildRegistrationTable extends Migration
 {
@@ -16,6 +17,7 @@ class CreateChildRegistrationTable extends Migration
         Schema::create('childregistration', function (Blueprint $table) {
             $table->id();
             $table->string('First_name');
+            $table->date('Birth_date');
             $table->integer('Age_in_months');
             $table->foreignId('user_id')->nullable()->index();
             $table->timestamps();

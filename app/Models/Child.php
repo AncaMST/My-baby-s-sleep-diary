@@ -9,5 +9,9 @@ class Child extends Model
 {   
     use HasFactory;
     protected $table = 'childregistration';
+
+    protected $fillable = [
+        'First_name', 'Birth_date',
+    ];
     
 }

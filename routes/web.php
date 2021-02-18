@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +47,19 @@ Route::get('/age/{number_of_months}/', function ($number_of_months)  {
 Route::get('/showchildren', 'App\Http\Controllers\Children@index');
 
 Route::get('/sleepinfo/{age}/', 'App\Http\Controllers\Children@sleepinfo')->name('sleepinfo');
+
+Route::get('/date', function() {
+    $date = new DateTime();
+    echo $date->format('d-m-Y');
+});
+
+Route::get('/sendEmail', 'App\Http\Controllers\Children@sleepAlert');
+
+Route::get('/verifyDate', function(){
+    $today = Carbon::today();
+    $lastDayOfMonth = Carbon::parse($today)->endOfMonth();
+    if ($today == $lastDayOfMonth) {
+        return redirect('/sendEmail');
+    } else
+        return 2;
+});
