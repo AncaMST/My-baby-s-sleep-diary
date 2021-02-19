@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\DB;
 
 class Children extends Controller
 {
@@ -25,11 +26,9 @@ class Children extends Controller
     }
 
     public function index() {
+        $updatedAge= $this->updateAge();
         $userid = Auth::user()->id; 
         $children = Child::all()->where('user_id', $userid);
-        foreach ($children as $child) {
-            $child->Age_in_months = Carbon::today()->diffInMonths($child->Birth_date);
-        }
         return view('showchildren', compact('children'));
     }
 
@@ -38,6 +37,7 @@ class Children extends Controller
     }
 
     public function sleepAlert() {
+        $updatedAge= $this->updateAge();
         $children = Child::all();
         foreach($children as $child) {
             $ageNextMonth = $child->Age_in_months + 1;
@@ -65,4 +65,11 @@ class Children extends Controller
 
     }
 
+    public function updateAge() {
+        $children = Child::all();
+        foreach($children as $child) {
+            $child->Age_in_months = Carbon::today()->diffInMonths($child->Birth_date);
+            $child->update();
+        }
+    }
 }

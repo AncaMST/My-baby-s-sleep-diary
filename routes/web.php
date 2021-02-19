@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Mail;
+
 use Carbon\Carbon;
 
 /*
@@ -55,11 +56,12 @@ Route::get('/date', function() {
 
 Route::get('/sendEmail', 'App\Http\Controllers\Children@sleepAlert');
 
+Route::get('/updateAge', 'App\Http\Controllers\Children@updateAge');
+
 Route::get('/verifyDate', function(){
     $today = Carbon::today();
     $lastDayOfMonth = Carbon::parse($today)->endOfMonth();
     if ($today == $lastDayOfMonth) {
         return redirect('/sendEmail');
-    } else
-        return 2;
+    }
 });
