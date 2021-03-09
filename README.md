@@ -1,6 +1,10 @@
 <h1>Web application designed for parents to help their child sleep better. Parents can login, register a child, find about their child sleep program and receive alerts when their child will pass to another sleep program.</h1>
 
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(2).png">
+<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(3).png">
+<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(4).png">
+<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(5).png">
+<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(6).png">
 
 <p></p>
 <p></p>
