@@ -4,7 +4,7 @@
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(3).png">
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(4).png">
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(5).png">
-<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(6).png">
+<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(7).png">
 
 <p></p>
 <p></p>
