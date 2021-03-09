@@ -1,5 +1,7 @@
 <h1>Web application designed for parents to help their child sleep better. Parents can login, register a child, find about their child sleep program and receive alerts when their child will pass to another sleep program.</h1>
 
+<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(2).png">
+
 <p></p>
 <p></p>
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
