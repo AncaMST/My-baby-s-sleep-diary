@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>My baby's sleep diary</title>
 
     <!-- Fonts -->
@@ -11,14 +10,16 @@
 
     <!-- Styles -->
     <style>
-        html, body {
-            background-color: #fff;
-            color: #636b6f;
-            font-family: 'Nunito', sans-serif;
-            font-weight: 200;
-            height: 100vh;
-            margin: 0;
-        }
+    body {
+        background-image: url("../images/babysleeping.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: PaleGoldenRod;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 200;
+        height: 100vh;
+        margin: 0;
+    }
 
         .full-height {
             height: 100vh;
@@ -49,7 +50,7 @@
         }
 
         .links > a {
-            color: #636b6f;
+            color: PaleGoldenRod;
             padding: 0 25px;
             font-size: 13px;
             font-weight: 600;
@@ -63,7 +64,9 @@
         }
     </style>
 </head>
+
 <body>
+<div class="bg"></div>
 <div class="flex-center position-ref full-height">
     @if (Route::has('login'))
         <div class="top-right links">

@@ -50,7 +50,7 @@ class Children extends Controller
                     $useremail = $user->email;
                     $data = [
                         'title'=>'Dear '.$username.',',
-                        'content'=>'Your child, '.$childname.', is growing and will pass soon to another sleep program',
+                        'content'=>'Your child, '.$childname.', is growing and will soon pass to another sleep program',
                         'info'=> 'Please visit My baby\'s sleep diary for more information.'
                     ];
                 
