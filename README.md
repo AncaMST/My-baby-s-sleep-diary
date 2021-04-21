@@ -4,7 +4,6 @@
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-04-21%20(6).png">
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-04-21%20(7).png">
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-04-21%20(8).png">
-<img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(5).png">
 <img src = "https://github.com/AncaMST/My-baby-s-sleep-diary/blob/master/2021-03-09%20(7).png">
 
 <p></p>
